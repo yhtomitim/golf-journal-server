@@ -661,7 +661,7 @@ module.exports.seed = (knex) => {
           notes: 'I three putted from 5 feet, fun.'
         },
         {
-          id: 88,
+          id: 89,
           round_id: '6',
           hole: '2',
           par: '5',
@@ -669,7 +669,7 @@ module.exports.seed = (knex) => {
           notes: 'I hit two to get out of greenside bunker, fun.'
         },
         {
-          id: 89,
+          id: 90,
           round_id: '6',
           hole: '3',
           par: '3',
@@ -677,7 +677,7 @@ module.exports.seed = (knex) => {
           notes: 'CHIPPED IN FROM 50ft.!'
         },
         {
-          id: 90,
+          id: 91,
           round_id: '6',
           hole: '4',
           par: '4',
@@ -685,7 +685,7 @@ module.exports.seed = (knex) => {
           notes: 'two drives OB'
         },
         {
-          id: 91,
+          id: 92,
           round_id: '6',
           hole: '5',
           par: '4',
@@ -693,7 +693,7 @@ module.exports.seed = (knex) => {
           notes: 'on in 2, 25 ft putt'
         },
         {
-          id: 92,
+          id: 93,
           round_id: '6',
           hole: '6',
           par: '3',
@@ -701,7 +701,7 @@ module.exports.seed = (knex) => {
           notes: 'hit into water'
         },
         {
-          id: 93,
+          id: 94,
           round_id: '6',
           hole: '7',
           par: '5',
@@ -709,7 +709,7 @@ module.exports.seed = (knex) => {
           notes: '300 yd drive down the middle'
         },
         {
-          id: 94,
+          id: 95,
           round_id: '6',
           hole: '8',
           par: '4',
@@ -717,7 +717,7 @@ module.exports.seed = (knex) => {
           notes: 'popped drive up, hit 3 iron 5 times down the fairway'
         },
         {
-          id: 95,
+          id: 96,
           round_id: '6',
           hole: '9',
           par: '3',
@@ -725,7 +725,7 @@ module.exports.seed = (knex) => {
           notes: 'two putted from 50 ft.'
         },
         {
-          id: 96,
+          id: 97,
           round_id: '6',
           hole: '10',
           par: '4',
@@ -733,7 +733,7 @@ module.exports.seed = (knex) => {
           notes: 'bad drive, but hit 275 yd 3 wood to 20 ft.'
         },
         {
-          id: 97,
+          id: 98,
           round_id: '6',
           hole: '11',
           par: '4',
@@ -741,7 +741,7 @@ module.exports.seed = (knex) => {
           notes: 'three putted from 100 ft'
         },
         {
-          id: 98,
+          id: 99,
           round_id: '6',
           hole: '12',
           par: '4',
@@ -749,7 +749,7 @@ module.exports.seed = (knex) => {
           notes: 'holed out from 75 yd with SW'
         },
         {
-          id: 99,
+          id: 100,
           round_id: '6',
           hole: '13',
           par: '3',
@@ -757,7 +757,7 @@ module.exports.seed = (knex) => {
           notes: 'bad off tee, bad hole'
         },
         {
-          id: 100,
+          id: 101,
           round_id: '6',
           hole: '14',
           par: '4',
@@ -765,7 +765,7 @@ module.exports.seed = (knex) => {
           notes: 'drive OB, rest of hole was great'
         },
         {
-          id: 101,
+          id: 102,
           round_id: '6',
           hole: '15',
           par: '4',
@@ -773,7 +773,7 @@ module.exports.seed = (knex) => {
           notes: 'hit 2nd to 5 ft w/ 7i from 165'
         },
         {
-          id: 101,
+          id: 103,
           round_id: '6',
           hole: '16',
           par: '4',
@@ -781,14 +781,14 @@ module.exports.seed = (knex) => {
           notes: '3 shots to get 150yds'
         },
         {
-          id: 102,
+          id: 104,
           round_id: '6',
           hole: '17',
           par: '4',
           score: '5',
           notes: 'two chips from off green, 1 putt'
         }, {
-          id: 103,
+          id: 105,
           round_id: '2',
           hole: '18',
           par: '4',
@@ -797,5 +797,5 @@ module.exports.seed = (knex) => {
         }
       ]);
     })
-    .then(() => knex.raw('ALTER SEQUENCE hole_id_seq RESTART WITH 104;'));
+    .then(() => knex.raw('ALTER SEQUENCE hole_id_seq RESTART WITH 106;'));
 };
