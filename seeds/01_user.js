@@ -1,13 +1,23 @@
 
-exports.seed = function(knex, Promise) {
+module.exports.seed = (knex) => {
   // Deletes ALL existing entries
-  return knex('table_name').del()
-    .then(function () {
+  return knex('user').del()
+    .then(() => {
       // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+      return knex('user').insert([
+        {
+          id: 1,
+          uid: '1'
+        },
+        {
+          id: 2,
+          uid: '2'
+        },
+        {
+          id: 3,
+          uid: '3'
+        }
       ]);
-    });
+    })
+    .then(() => knex.raw('ALTER SEQUENCE user_id_seq RESTART WITH 4;'));
 };
